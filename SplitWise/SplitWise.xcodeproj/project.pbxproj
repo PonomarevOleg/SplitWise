@@ -8,22 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		1130F12F28FDCAC500E735D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130F12E28FDCAC500E735D4 /* AppDelegate.swift */; };
-		1130F13128FDCAC500E735D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130F13028FDCAC500E735D4 /* SceneDelegate.swift */; };
-		1130F13328FDCAC500E735D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130F13228FDCAC500E735D4 /* ViewController.swift */; };
-		1130F13628FDCAC500E735D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1130F13428FDCAC500E735D4 /* Main.storyboard */; };
 		1130F13828FDCAD000E735D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1130F13728FDCAD000E735D4 /* Assets.xcassets */; };
 		1130F13B28FDCAD000E735D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1130F13928FDCAD000E735D4 /* LaunchScreen.storyboard */; };
+		1130F15328FEA0A200E735D4 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130F15128FEA0A200E735D4 /* ContactListViewController.swift */; };
+		1130F15428FEA0A200E735D4 /* ContactListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1130F15228FEA0A200E735D4 /* ContactListViewController.xib */; };
+		1130F15628FEB73200E735D4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130F15528FEB73200E735D4 /* TabBarController.swift */; };
+		1130F15928FEB9D100E735D4 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130F15728FEB9D100E735D4 /* GroupListViewController.swift */; };
+		1130F15A28FEB9D100E735D4 /* GroupListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1130F15828FEB9D100E735D4 /* GroupListViewController.xib */; };
+		1130F1662900685400E735D4 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130F1642900685400E735D4 /* ContactTableViewCell.swift */; };
+		1130F1672900685400E735D4 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1130F1652900685400E735D4 /* ContactTableViewCell.xib */; };
+		11AAC7492901442800B2C93C /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AAC7482901442800B2C93C /* ContactList.swift */; };
+		11AAC74C290148F500B2C93C /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AAC74A290148F500B2C93C /* GroupTableViewCell.swift */; };
+		11AAC74D290148F500B2C93C /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11AAC74B290148F500B2C93C /* GroupTableViewCell.xib */; };
+		11AAC7502901B38200B2C93C /* GroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AAC74F2901B38200B2C93C /* GroupList.swift */; };
+		11AAC75229042DAA00B2C93C /* ContactCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AAC75129042DA900B2C93C /* ContactCellTableViewCell.swift */; };
+		E168CED9762AC7F59DCA62B9 /* Pods_SplitWise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD03CE28B646DE4D3273FB1 /* Pods_SplitWise.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1130F12B28FDCAC500E735D4 /* SplitWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1130F12E28FDCAC500E735D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1130F13028FDCAC500E735D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1130F13228FDCAC500E735D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1130F13528FDCAC500E735D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1130F13728FDCAD000E735D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1130F13A28FDCAD000E735D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1130F13C28FDCAD000E735D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1130F15128FEA0A200E735D4 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		1130F15228FEA0A200E735D4 /* ContactListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactListViewController.xib; sourceTree = "<group>"; };
+		1130F15528FEB73200E735D4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		1130F15728FEB9D100E735D4 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
+		1130F15828FEB9D100E735D4 /* GroupListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupListViewController.xib; sourceTree = "<group>"; };
+		1130F1642900685400E735D4 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
+		1130F1652900685400E735D4 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
+		11AAC7482901442800B2C93C /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		11AAC74A290148F500B2C93C /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		11AAC74B290148F500B2C93C /* GroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupTableViewCell.xib; sourceTree = "<group>"; };
+		11AAC74F2901B38200B2C93C /* GroupList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupList.swift; sourceTree = "<group>"; };
+		11AAC75129042DA900B2C93C /* ContactCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactCellTableViewCell.swift; sourceTree = "<group>"; };
+		3D3B5EFCEA51B835A34F1514 /* Pods-SplitWise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitWise.release.xcconfig"; path = "Target Support Files/Pods-SplitWise/Pods-SplitWise.release.xcconfig"; sourceTree = "<group>"; };
+		5BD03CE28B646DE4D3273FB1 /* Pods_SplitWise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitWise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DE427D88F036F5A2DE20340 /* Pods-SplitWise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitWise.debug.xcconfig"; path = "Target Support Files/Pods-SplitWise/Pods-SplitWise.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E168CED9762AC7F59DCA62B9 /* Pods_SplitWise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +63,13 @@
 		1130F12228FDCAC500E735D4 = {
 			isa = PBXGroup;
 			children = (
+				1130F15F28FF2ACE00E735D4 /* TabBarControllers */,
+				1130F14A28FDCD5200E735D4 /* ContactListView */,
+				1130F14928FDCD4000E735D4 /* GroupListView */,
 				1130F12D28FDCAC500E735D4 /* SplitWise */,
 				1130F12C28FDCAC500E735D4 /* Products */,
+				1BAD014931C7E3C00D6A6393 /* Pods */,
+				A29D59909C920B9972A1C64F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +85,61 @@
 			isa = PBXGroup;
 			children = (
 				1130F12E28FDCAC500E735D4 /* AppDelegate.swift */,
-				1130F13028FDCAC500E735D4 /* SceneDelegate.swift */,
-				1130F13228FDCAC500E735D4 /* ViewController.swift */,
-				1130F13428FDCAC500E735D4 /* Main.storyboard */,
 				1130F13728FDCAD000E735D4 /* Assets.xcassets */,
 				1130F13928FDCAD000E735D4 /* LaunchScreen.storyboard */,
 				1130F13C28FDCAD000E735D4 /* Info.plist */,
 			);
 			path = SplitWise;
+			sourceTree = "<group>";
+		};
+		1130F14928FDCD4000E735D4 /* GroupListView */ = {
+			isa = PBXGroup;
+			children = (
+				11AAC74A290148F500B2C93C /* GroupTableViewCell.swift */,
+				11AAC74B290148F500B2C93C /* GroupTableViewCell.xib */,
+				1130F15828FEB9D100E735D4 /* GroupListViewController.xib */,
+				11AAC74F2901B38200B2C93C /* GroupList.swift */,
+				1130F15728FEB9D100E735D4 /* GroupListViewController.swift */,
+			);
+			path = GroupListView;
+			sourceTree = "<group>";
+		};
+		1130F14A28FDCD5200E735D4 /* ContactListView */ = {
+			isa = PBXGroup;
+			children = (
+				1130F15228FEA0A200E735D4 /* ContactListViewController.xib */,
+				1130F15128FEA0A200E735D4 /* ContactListViewController.swift */,
+				11AAC75129042DA900B2C93C /* ContactCellTableViewCell.swift */,
+				1130F1652900685400E735D4 /* ContactTableViewCell.xib */,
+				1130F1642900685400E735D4 /* ContactTableViewCell.swift */,
+				11AAC7482901442800B2C93C /* ContactList.swift */,
+			);
+			path = ContactListView;
+			sourceTree = "<group>";
+		};
+		1130F15F28FF2ACE00E735D4 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1130F15528FEB73200E735D4 /* TabBarController.swift */,
+			);
+			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		1BAD014931C7E3C00D6A6393 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DE427D88F036F5A2DE20340 /* Pods-SplitWise.debug.xcconfig */,
+				3D3B5EFCEA51B835A34F1514 /* Pods-SplitWise.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A29D59909C920B9972A1C64F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BD03CE28B646DE4D3273FB1 /* Pods_SplitWise.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1130F13F28FDCAD000E735D4 /* Build configuration list for PBXNativeTarget "SplitWise" */;
 			buildPhases = (
+				FE294EA9A222FD158C21FABC /* [CP] Check Pods Manifest.lock */,
 				1130F12728FDCAC500E735D4 /* Sources */,
 				1130F12828FDCAC500E735D4 /* Frameworks */,
 				1130F12928FDCAC500E735D4 /* Resources */,
+				C592354D4A0AAA78F623D6AF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,36 +202,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1130F15A28FEB9D100E735D4 /* GroupListViewController.xib in Resources */,
+				11AAC74D290148F500B2C93C /* GroupTableViewCell.xib in Resources */,
 				1130F13B28FDCAD000E735D4 /* LaunchScreen.storyboard in Resources */,
+				1130F15428FEA0A200E735D4 /* ContactListViewController.xib in Resources */,
+				1130F1672900685400E735D4 /* ContactTableViewCell.xib in Resources */,
 				1130F13828FDCAD000E735D4 /* Assets.xcassets in Resources */,
-				1130F13628FDCAC500E735D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C592354D4A0AAA78F623D6AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SplitWise/Pods-SplitWise-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SplitWise/Pods-SplitWise-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SplitWise/Pods-SplitWise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE294EA9A222FD158C21FABC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SplitWise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1130F12728FDCAC500E735D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1130F13328FDCAC500E735D4 /* ViewController.swift in Sources */,
+				1130F15928FEB9D100E735D4 /* GroupListViewController.swift in Sources */,
+				1130F15328FEA0A200E735D4 /* ContactListViewController.swift in Sources */,
+				11AAC7492901442800B2C93C /* ContactList.swift in Sources */,
+				11AAC74C290148F500B2C93C /* GroupTableViewCell.swift in Sources */,
+				11AAC75229042DAA00B2C93C /* ContactCellTableViewCell.swift in Sources */,
 				1130F12F28FDCAC500E735D4 /* AppDelegate.swift in Sources */,
-				1130F13128FDCAC500E735D4 /* SceneDelegate.swift in Sources */,
+				1130F1662900685400E735D4 /* ContactTableViewCell.swift in Sources */,
+				1130F15628FEB73200E735D4 /* TabBarController.swift in Sources */,
+				11AAC7502901B38200B2C93C /* GroupList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1130F13428FDCAC500E735D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1130F13528FDCAC500E735D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1130F13928FDCAD000E735D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +402,7 @@
 		};
 		1130F14028FDCAD000E735D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DE427D88F036F5A2DE20340 /* Pods-SplitWise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,7 +412,6 @@
 				INFOPLIST_FILE = SplitWise/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +429,7 @@
 		};
 		1130F14128FDCAD000E735D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D3B5EFCEA51B835A34F1514 /* Pods-SplitWise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,7 +439,6 @@
 				INFOPLIST_FILE = SplitWise/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
