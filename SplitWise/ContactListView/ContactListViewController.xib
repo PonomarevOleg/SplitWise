@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactListViewController" customModule="SplitWise" customModuleProvider="target">
             <connections>
+                <outlet property="addContactButton" destination="FxT-EF-87c" id="vi1-rc-72Z"/>
                 <outlet property="tableView" destination="3UZ-o8-Wi8" id="dpX-jT-wzz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -23,16 +24,29 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxT-EF-87c">
+                    <rect key="frame" x="295" y="743" width="99" height="99"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="99" id="Mf5-hk-aRp"/>
+                        <constraint firstAttribute="width" constant="99" id="g0z-xC-d0x"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Добавить" cornerStyle="medium">
+                        <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="13"/>
+                    </buttonConfiguration>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="FxT-EF-87c" secondAttribute="bottom" constant="20" id="1xz-a0-6FB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3UZ-o8-Wi8" secondAttribute="trailing" id="HUg-vv-X6q"/>
                 <constraint firstItem="3UZ-o8-Wi8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="myP-gA-Jp4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FxT-EF-87c" secondAttribute="trailing" constant="20" id="pYm-3j-P4b"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3UZ-o8-Wi8" secondAttribute="bottom" id="qOO-US-B36"/>
                 <constraint firstItem="3UZ-o8-Wi8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="rPS-T2-7gp"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="100"/>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </view>
     </objects>
     <resources>

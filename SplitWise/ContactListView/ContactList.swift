@@ -24,4 +24,7 @@ struct ContactList {
     public func getContactImageName() -> [String] {
         return contactImage
     }
+    func addContact(name: String, secondName: String) {
+//        contactList.append(name)
+    }
 }

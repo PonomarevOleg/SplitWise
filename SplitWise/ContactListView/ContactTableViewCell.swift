@@ -12,15 +12,15 @@ class ContactTableViewCell: UITableViewCell {
     func config(text: String, imageName: String) {
         contactNameLabel.text = text
         contactImageView.image = UIImage(named: imageName)
+        contactImageView.translatesAutoresizingMaskIntoConstraints = true
+        contactNameLabel.translatesAutoresizingMaskIntoConstraints = true
     }
     
-    func configCellStyle() {
-        contactImageView.layer.cornerRadius = contactImageView.frame.width / 2
-        contactImageView.contentMode = .scaleAspectFit
-        
+    func configCellStyle(cellHeight: CGFloat) {
+        contactImageView.layer.cornerRadius = (cellHeight - 20) / 2
     }
     
     func imageHeight(cellHeight: CGFloat) {
-        contactImageView.frame.size.height = cellHeight - 10
+        contactImageView.frame.size.height = cellHeight - 20
     }
 }

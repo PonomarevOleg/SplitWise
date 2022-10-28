@@ -1,18 +1,27 @@
 import UIKit
+import RealmSwift
 
 class ContactListViewController: UIViewController {
-    @IBOutlet var tableView: UITableView!
-    private var contacts = ContactList()
+    private let viewModel = ContacListViewModel()
+    @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var addContactButton: UIButton!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        addContactButton.addTarget(self, action: #selector(tapAddButton), for: .touchUpInside)
         tableView.register(UINib(
             nibName: "ContactTableViewCell", bundle: nil
         ), forCellReuseIdentifier: "ContactTableViewCell")
         view.backgroundColor = .green
         tableView.delegate = self
         tableView.dataSource = self
+        
+    }
+    @objc func tapAddButton() {
+        let vc = AddContactViewController()
+        navigationController?.present(vc, animated: true, completion: nil)
     }
 }
 
@@ -22,27 +31,25 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contacts.getContactListCount()
+        return viewModel.contactList.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 100
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
             let cell = tableView.dequeueReusableCell(
-                withIdentifier: "reuseIdentifier",
+                withIdentifier: "ContactTableViewCell",
                 for: indexPath
-        ) as? ContactCellTableViewCell else { return UITableViewCell() }
-//        cell.
-        cell.config(
-            text: contacts.getContactList()[indexPath.row],
-            imageName: contacts.getContactImageName()[indexPath.row]
-        )
-//        cell.imageHeight(cellHeight: cell.frame.size.height)
-//        cell.backgroundColor = .orange
-//        
-        cell.configCellStyle()
+        ) as? ContactTableViewCell else { return UITableViewCell() }
+        
+       
+        
+        cell.configCellStyle(cellHeight: cell.frame.size.height)
+        cell.imageHeight(cellHeight: cell.frame.size.height)
+        cell.backgroundColor = .orange
+        
          return cell
     }
     

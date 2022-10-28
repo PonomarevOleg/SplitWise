@@ -9,41 +9,39 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactTableViewCell" rowHeight="151" id="KGk-i7-Jjw" customClass="ContactTableViewCell" customModule="SplitWise" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="409" height="151"/>
+        <tableViewCell contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContactTableViewCell" rowHeight="108" id="KGk-i7-Jjw" customClass="ContactTableViewCell" customModule="SplitWise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="109"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="ContactTableViewCell" customModule="SplitWise" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="409" height="151"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="ContactTableViewCell" customModule="SplitWise" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="109"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02H-V4-l2r">
-                        <rect key="frame" x="151" y="65.5" width="228" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="280" verticalHuggingPriority="237" horizontalCompressionResistancePriority="733" verticalCompressionResistancePriority="737" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02H-V4-l2r">
+                        <rect key="frame" x="15" y="44.5" width="41.5" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HuG-by-zB1">
-                        <rect key="frame" x="10" y="10" width="131" height="131"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="HuG-by-zB1" secondAttribute="height" multiplier="1:1" id="zPg-yz-LCl"/>
-                        </constraints>
-                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnG-gt-AOR">
+                        <rect key="frame" x="66.5" y="44" width="262.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="02H-V4-l2r" firstAttribute="leading" secondItem="HuG-by-zB1" secondAttribute="trailing" constant="10" id="8Az-1d-JtT"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="02H-V4-l2r" secondAttribute="trailing" constant="10" id="Kwu-ex-2er"/>
-                    <constraint firstAttribute="bottom" secondItem="HuG-by-zB1" secondAttribute="bottom" constant="10" id="U4J-Ry-5i2"/>
-                    <constraint firstItem="HuG-by-zB1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="XvP-fC-ZyJ"/>
-                    <constraint firstItem="HuG-by-zB1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cIV-ub-dec"/>
-                    <constraint firstItem="02H-V4-l2r" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ueZ-yR-Sj5"/>
+                    <constraint firstItem="gnG-gt-AOR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3Tq-Fx-GiZ"/>
+                    <constraint firstItem="02H-V4-l2r" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cI7-gD-1pD"/>
+                    <constraint firstAttribute="trailing" secondItem="gnG-gt-AOR" secondAttribute="trailing" constant="10" id="fB9-yE-8go"/>
+                    <constraint firstItem="gnG-gt-AOR" firstAttribute="leading" secondItem="02H-V4-l2r" secondAttribute="trailing" constant="10" id="gP1-Ll-iXZ"/>
+                    <constraint firstItem="02H-V4-l2r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="sH1-Xh-BPQ"/>
                 </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <viewLayoutGuide key="safeArea" id="pzf-6K-D1B"/>
             <connections>
-                <outlet property="contactImageView" destination="HuG-by-zB1" id="lBc-gY-IQJ"/>
                 <outlet property="contactNameLabel" destination="02H-V4-l2r" id="rOM-z6-WeQ"/>
             </connections>
-            <point key="canvasLocation" x="-67.391304347826093" y="-45.200892857142854"/>
+            <point key="canvasLocation" x="-123.91304347826087" y="-11.71875"/>
         </tableViewCell>
     </objects>
 </document>
