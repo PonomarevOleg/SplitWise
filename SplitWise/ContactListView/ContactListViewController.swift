@@ -19,6 +19,9 @@ class ContactListViewController: UIViewController {
         tableView.dataSource = self
         
     }
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
     @objc func tapAddButton() {
         let vc = AddContactViewController()
         navigationController?.present(vc, animated: true, completion: nil)
@@ -33,7 +36,9 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.contactList.count
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(viewModel.contactList[indexPath.row].id)
+    }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
@@ -44,14 +49,13 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
                 for: indexPath
         ) as? ContactTableViewCell else { return UITableViewCell() }
         
-       
-        
-        cell.configCellStyle(cellHeight: cell.frame.size.height)
-        cell.imageHeight(cellHeight: cell.frame.size.height)
         cell.backgroundColor = .orange
+        cell.config(
+            name: viewModel.contactList[indexPath.row].name,
+            secondName: viewModel.contactList[indexPath.row].secondName
+        )
         
          return cell
     }
     
 }
-

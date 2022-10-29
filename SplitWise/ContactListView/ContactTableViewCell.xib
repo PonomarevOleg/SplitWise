@@ -16,14 +16,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="339" height="109"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="280" verticalHuggingPriority="237" horizontalCompressionResistancePriority="733" verticalCompressionResistancePriority="737" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02H-V4-l2r">
-                        <rect key="frame" x="15" y="44.5" width="41.5" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="237" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="755" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02H-V4-l2r">
+                        <rect key="frame" x="30" y="44.5" width="80" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="800" constant="80" id="2zy-P4-1s4"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="255" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnG-gt-AOR">
-                        <rect key="frame" x="66.5" y="44" width="262.5" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="255" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="755" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnG-gt-AOR">
+                        <rect key="frame" x="120" y="44" width="209" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -34,12 +37,13 @@
                     <constraint firstItem="02H-V4-l2r" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cI7-gD-1pD"/>
                     <constraint firstAttribute="trailing" secondItem="gnG-gt-AOR" secondAttribute="trailing" constant="10" id="fB9-yE-8go"/>
                     <constraint firstItem="gnG-gt-AOR" firstAttribute="leading" secondItem="02H-V4-l2r" secondAttribute="trailing" constant="10" id="gP1-Ll-iXZ"/>
-                    <constraint firstItem="02H-V4-l2r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="sH1-Xh-BPQ"/>
+                    <constraint firstItem="02H-V4-l2r" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="sH1-Xh-BPQ"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="pzf-6K-D1B"/>
             <connections>
                 <outlet property="contactNameLabel" destination="02H-V4-l2r" id="rOM-z6-WeQ"/>
+                <outlet property="secondNameLabel" destination="gnG-gt-AOR" id="zm7-Cd-aT6"/>
             </connections>
             <point key="canvasLocation" x="-123.91304347826087" y="-11.71875"/>
         </tableViewCell>
