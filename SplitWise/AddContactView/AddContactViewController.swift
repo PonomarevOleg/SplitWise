@@ -3,7 +3,7 @@ import RealmSwift
 
 class AddContactViewController: UIViewController {
     private let viewModel = AddContactViewModel()
-//    var delegate: AddContactDelegate?
+    //    var delegate: AddContactDelegate?
     @IBOutlet private var nameTextField: UITextField!
     @IBOutlet private var secondNameTextField: UITextField!
     @IBOutlet private var saveContactButton: UIButton!
@@ -34,7 +34,6 @@ class AddContactViewController: UIViewController {
                 guard let self = self else { return }
                 
                 self.navigationController?.popViewController(animated: true)
-//                self.delegate?.reloadList()
             }
         }
     }
@@ -55,7 +54,3 @@ extension AddContactViewController: UITextFieldDelegate{
         return true
     }
 }
-//
-//protocol AddContactDelegate: AddContactViewController{
-//    func reloadList()
-//}

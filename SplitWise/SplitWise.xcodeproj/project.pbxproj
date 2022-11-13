@@ -21,6 +21,8 @@
 		1101EA29290EACFC00ED5DDF /* GroupInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1101EA27290EACFC00ED5DDF /* GroupInfoViewController.xib */; };
 		1101EA2B290EE7A700ED5DDF /* GroupInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1101EA2A290EE7A700ED5DDF /* GroupInfoViewModel.swift */; };
 		1101EA2D290FB56100ED5DDF /* ChooseMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1101EA2C290FB56100ED5DDF /* ChooseMemberViewModel.swift */; };
+		1101EA30290FD1B400ED5DDF /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1101EA2E290FD1B400ED5DDF /* MemberTableViewCell.swift */; };
+		1101EA31290FD1B400ED5DDF /* MemberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1101EA2F290FD1B400ED5DDF /* MemberTableViewCell.xib */; };
 		1130F12F28FDCAC500E735D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130F12E28FDCAC500E735D4 /* AppDelegate.swift */; };
 		1130F13828FDCAD000E735D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1130F13728FDCAD000E735D4 /* Assets.xcassets */; };
 		1130F13B28FDCAD000E735D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1130F13928FDCAD000E735D4 /* LaunchScreen.storyboard */; };
@@ -29,7 +31,14 @@
 		1130F15628FEB73200E735D4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130F15528FEB73200E735D4 /* TabBarController.swift */; };
 		1130F1662900685400E735D4 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1130F1642900685400E735D4 /* ContactTableViewCell.swift */; };
 		1130F1672900685400E735D4 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1130F1652900685400E735D4 /* ContactTableViewCell.xib */; };
-		11AAC7492901442800B2C93C /* ContactList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AAC7482901442800B2C93C /* ContactList.swift */; };
+		1199BADC2913B74400FA34F4 /* GroupListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1199BADB2913B74400FA34F4 /* GroupListViewModel.swift */; };
+		1199BADF2913CB3600FA34F4 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1199BADD2913CB3600FA34F4 /* GroupTableViewCell.swift */; };
+		1199BAE02913CB3600FA34F4 /* GroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1199BADE2913CB3600FA34F4 /* GroupTableViewCell.xib */; };
+		1199BAE42916B48500FA34F4 /* DetailGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1199BAE22916B48500FA34F4 /* DetailGroupViewController.swift */; };
+		1199BAE52916B48500FA34F4 /* DetailGroupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1199BAE32916B48500FA34F4 /* DetailGroupViewController.xib */; };
+		1199BAE72916BCEA00FA34F4 /* DetailGroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1199BAE62916BCEA00FA34F4 /* DetailGroupViewModel.swift */; };
+		1199BAEE291A75A100FA34F4 /* DetailGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1199BAEC291A75A100FA34F4 /* DetailGroupTableViewCell.swift */; };
+		1199BAEF291A75A100FA34F4 /* DetailGroupTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1199BAED291A75A100FA34F4 /* DetailGroupTableViewCell.xib */; };
 		E168CED9762AC7F59DCA62B9 /* Pods_SplitWise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BD03CE28B646DE4D3273FB1 /* Pods_SplitWise.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +57,8 @@
 		1101EA27290EACFC00ED5DDF /* GroupInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupInfoViewController.xib; sourceTree = "<group>"; };
 		1101EA2A290EE7A700ED5DDF /* GroupInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupInfoViewModel.swift; sourceTree = "<group>"; };
 		1101EA2C290FB56100ED5DDF /* ChooseMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMemberViewModel.swift; sourceTree = "<group>"; };
+		1101EA2E290FD1B400ED5DDF /* MemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		1101EA2F290FD1B400ED5DDF /* MemberTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberTableViewCell.xib; sourceTree = "<group>"; };
 		1130F12B28FDCAC500E735D4 /* SplitWise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplitWise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1130F12E28FDCAC500E735D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1130F13728FDCAD000E735D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +69,14 @@
 		1130F15528FEB73200E735D4 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		1130F1642900685400E735D4 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		1130F1652900685400E735D4 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
-		11AAC7482901442800B2C93C /* ContactList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactList.swift; sourceTree = "<group>"; };
+		1199BADB2913B74400FA34F4 /* GroupListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewModel.swift; sourceTree = "<group>"; };
+		1199BADD2913CB3600FA34F4 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		1199BADE2913CB3600FA34F4 /* GroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupTableViewCell.xib; sourceTree = "<group>"; };
+		1199BAE22916B48500FA34F4 /* DetailGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGroupViewController.swift; sourceTree = "<group>"; };
+		1199BAE32916B48500FA34F4 /* DetailGroupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGroupViewController.xib; sourceTree = "<group>"; };
+		1199BAE62916BCEA00FA34F4 /* DetailGroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGroupViewModel.swift; sourceTree = "<group>"; };
+		1199BAEC291A75A100FA34F4 /* DetailGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGroupTableViewCell.swift; sourceTree = "<group>"; };
+		1199BAED291A75A100FA34F4 /* DetailGroupTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailGroupTableViewCell.xib; sourceTree = "<group>"; };
 		3D3B5EFCEA51B835A34F1514 /* Pods-SplitWise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitWise.release.xcconfig"; path = "Target Support Files/Pods-SplitWise/Pods-SplitWise.release.xcconfig"; sourceTree = "<group>"; };
 		5BD03CE28B646DE4D3273FB1 /* Pods_SplitWise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SplitWise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DE427D88F036F5A2DE20340 /* Pods-SplitWise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SplitWise.debug.xcconfig"; path = "Target Support Files/Pods-SplitWise/Pods-SplitWise.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,45 +113,51 @@
 			path = Realm;
 			sourceTree = "<group>";
 		};
-		1101EA1B290E916600ED5DDF /* AddGroupView */ = {
+		1101EA1B290E916600ED5DDF /* GroupListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1101EA1C290E91A500ED5DDF /* GroupListViewController.swift */,
 				1101EA1D290E91A500ED5DDF /* GroupListViewController.xib */,
+				1101EA1C290E91A500ED5DDF /* GroupListViewController.swift */,
+				1199BADD2913CB3600FA34F4 /* GroupTableViewCell.swift */,
+				1199BADE2913CB3600FA34F4 /* GroupTableViewCell.xib */,
+				1199BADB2913B74400FA34F4 /* GroupListViewModel.swift */,
 			);
-			path = AddGroupView;
+			path = GroupListViewController;
 			sourceTree = "<group>";
 		};
-		1101EA20290E9CD500ED5DDF /* NewGroupView */ = {
+		1101EA20290E9CD500ED5DDF /* ChooseMemberViewController */ = {
 			isa = PBXGroup;
 			children = (
 				1101EA21290E9D8000ED5DDF /* ChooseMemberViewController.swift */,
-				1101EA2C290FB56100ED5DDF /* ChooseMemberViewModel.swift */,
 				1101EA22290E9D8000ED5DDF /* ChooseMemberViewController.xib */,
+				1101EA2E290FD1B400ED5DDF /* MemberTableViewCell.swift */,
+				1101EA2F290FD1B400ED5DDF /* MemberTableViewCell.xib */,
+				1101EA2C290FB56100ED5DDF /* ChooseMemberViewModel.swift */,
 			);
-			path = NewGroupView;
+			path = ChooseMemberViewController;
 			sourceTree = "<group>";
 		};
-		1101EA25290EAC9B00ED5DDF /* GroupInfoViewController */ = {
+		1101EA25290EAC9B00ED5DDF /* NewGroupInfoViewController */ = {
 			isa = PBXGroup;
 			children = (
 				1101EA26290EACFC00ED5DDF /* GroupInfoViewController.swift */,
 				1101EA27290EACFC00ED5DDF /* GroupInfoViewController.xib */,
 				1101EA2A290EE7A700ED5DDF /* GroupInfoViewModel.swift */,
 			);
-			path = GroupInfoViewController;
+			path = NewGroupInfoViewController;
 			sourceTree = "<group>";
 		};
 		1130F12228FDCAC500E735D4 = {
 			isa = PBXGroup;
 			children = (
-				1101EA25290EAC9B00ED5DDF /* GroupInfoViewController */,
-				1101EA20290E9CD500ED5DDF /* NewGroupView */,
-				1101EA1B290E916600ED5DDF /* AddGroupView */,
-				1101EA1229084F4800ED5DDF /* Realm */,
+				1199BAE12916B44800FA34F4 /* DetailGroupViewControlle */,
 				1130F15F28FF2ACE00E735D4 /* TabBarControllers */,
 				1101EA0D29080BBF00ED5DDF /* AddContactView */,
 				1130F14A28FDCD5200E735D4 /* ContactListView */,
+				1101EA1B290E916600ED5DDF /* GroupListViewController */,
+				1101EA25290EAC9B00ED5DDF /* NewGroupInfoViewController */,
+				1101EA20290E9CD500ED5DDF /* ChooseMemberViewController */,
+				1101EA1229084F4800ED5DDF /* Realm */,
 				1130F12D28FDCAC500E735D4 /* SplitWise */,
 				1130F12C28FDCAC500E735D4 /* Products */,
 				1BAD014931C7E3C00D6A6393 /* Pods */,
@@ -167,7 +191,6 @@
 				1130F15128FEA0A200E735D4 /* ContactListViewController.swift */,
 				1130F1652900685400E735D4 /* ContactTableViewCell.xib */,
 				1130F1642900685400E735D4 /* ContactTableViewCell.swift */,
-				11AAC7482901442800B2C93C /* ContactList.swift */,
 				1101EA1929095C1600ED5DDF /* ContactListViewModel.swift */,
 			);
 			path = ContactListView;
@@ -179,6 +202,18 @@
 				1130F15528FEB73200E735D4 /* TabBarController.swift */,
 			);
 			path = TabBarControllers;
+			sourceTree = "<group>";
+		};
+		1199BAE12916B44800FA34F4 /* DetailGroupViewControlle */ = {
+			isa = PBXGroup;
+			children = (
+				1199BAE32916B48500FA34F4 /* DetailGroupViewController.xib */,
+				1199BAE22916B48500FA34F4 /* DetailGroupViewController.swift */,
+				1199BAED291A75A100FA34F4 /* DetailGroupTableViewCell.xib */,
+				1199BAEC291A75A100FA34F4 /* DetailGroupTableViewCell.swift */,
+				1199BAE62916BCEA00FA34F4 /* DetailGroupViewModel.swift */,
+			);
+			path = DetailGroupViewControlle;
 			sourceTree = "<group>";
 		};
 		1BAD014931C7E3C00D6A6393 /* Pods */ = {
@@ -258,6 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1199BAEF291A75A100FA34F4 /* DetailGroupTableViewCell.xib in Resources */,
 				1101EA1F290E91A500ED5DDF /* GroupListViewController.xib in Resources */,
 				1130F13B28FDCAD000E735D4 /* LaunchScreen.storyboard in Resources */,
 				1130F15428FEA0A200E735D4 /* ContactListViewController.xib in Resources */,
@@ -265,6 +301,9 @@
 				1101EA29290EACFC00ED5DDF /* GroupInfoViewController.xib in Resources */,
 				1130F1672900685400E735D4 /* ContactTableViewCell.xib in Resources */,
 				1101EA24290E9D8000ED5DDF /* ChooseMemberViewController.xib in Resources */,
+				1199BAE02913CB3600FA34F4 /* GroupTableViewCell.xib in Resources */,
+				1199BAE52916B48500FA34F4 /* DetailGroupViewController.xib in Resources */,
+				1101EA31290FD1B400ED5DDF /* MemberTableViewCell.xib in Resources */,
 				1130F13828FDCAD000E735D4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,20 +358,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				1101EA1A29095C1600ED5DDF /* ContactListViewModel.swift in Sources */,
+				1199BAE72916BCEA00FA34F4 /* DetailGroupViewModel.swift in Sources */,
 				1101EA2D290FB56100ED5DDF /* ChooseMemberViewModel.swift in Sources */,
+				1199BADC2913B74400FA34F4 /* GroupListViewModel.swift in Sources */,
+				1199BAEE291A75A100FA34F4 /* DetailGroupTableViewCell.swift in Sources */,
 				1101EA1429084F6400ED5DDF /* Models.swift in Sources */,
 				1130F15328FEA0A200E735D4 /* ContactListViewController.swift in Sources */,
-				11AAC7492901442800B2C93C /* ContactList.swift in Sources */,
 				1101EA182909542200ED5DDF /* AddContactViewModel.swift in Sources */,
 				1101EA1029080C0D00ED5DDF /* AddContactViewController.swift in Sources */,
 				1101EA2B290EE7A700ED5DDF /* GroupInfoViewModel.swift in Sources */,
 				1101EA1E290E91A500ED5DDF /* GroupListViewController.swift in Sources */,
+				1199BADF2913CB3600FA34F4 /* GroupTableViewCell.swift in Sources */,
 				1130F12F28FDCAC500E735D4 /* AppDelegate.swift in Sources */,
+				1199BAE42916B48500FA34F4 /* DetailGroupViewController.swift in Sources */,
 				1101EA23290E9D8000ED5DDF /* ChooseMemberViewController.swift in Sources */,
 				1130F1662900685400E735D4 /* ContactTableViewCell.swift in Sources */,
 				1130F15628FEB73200E735D4 /* TabBarController.swift in Sources */,
 				1101EA28290EACFC00ED5DDF /* GroupInfoViewController.swift in Sources */,
 				1101EA162908502500ED5DDF /* DataBaseManager.swift in Sources */,
+				1101EA30290FD1B400ED5DDF /* MemberTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

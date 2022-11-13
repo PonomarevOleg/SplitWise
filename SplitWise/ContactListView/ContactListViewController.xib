@@ -11,7 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactListViewController" customModule="SplitWise" customModuleProvider="target">
             <connections>
                 <outlet property="addContactButton" destination="FxT-EF-87c" id="vi1-rc-72Z"/>
-                <outlet property="tableView" destination="3UZ-o8-Wi8" id="dpX-jT-wzz"/>
+                <outlet property="contactTableView" destination="3UZ-o8-Wi8" id="dpX-jT-wzz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

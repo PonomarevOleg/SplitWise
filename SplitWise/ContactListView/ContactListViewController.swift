@@ -3,39 +3,34 @@ import RealmSwift
 
 class ContactListViewController: UIViewController {
     private let viewModel = ContacListViewModel()
-//    private let addVC = AddContactViewController()
-    @IBOutlet private var tableView: UITableView!
+    @IBOutlet private var contactTableView: UITableView!
     @IBOutlet private var addContactButton: UIButton!
-
-    @IBOutlet var but: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(Realm.Configuration.defaultConfiguration)
         addContactButton.addTarget(self, action: #selector(tapAddButton), for: .touchUpInside)
-        tableView.register(UINib(
+        contactTableView.register(UINib(
             nibName: "ContactTableViewCell", bundle: nil
         ), forCellReuseIdentifier: "ContactTableViewCell")
         view.backgroundColor = .green
-        tableView.delegate = self
-        tableView.dataSource = self
-//        addVC.delegate = self
-        
+        contactTableView.delegate = self
+        contactTableView.dataSource = self
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
+        
         viewModel.updateContactList()
-        tableView.reloadData()
+        contactTableView.reloadData()
     }
     
     @objc func tapAddButton() {
         let vc = AddContactViewController()
+        print(Realm.Configuration.defaultConfiguration)
         navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @objc func tappa() {
-        tableView.reloadData()
     }
 }
 
@@ -56,12 +51,8 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
         if editingStyle == .delete
         {
             viewModel.deleteContact(index: indexPath.row)
-            self.tableView.reloadData()
+            self.contactTableView.reloadData()
         }
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(viewModel.contactList[indexPath.row].id)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -76,7 +67,7 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
         ) as? ContactTableViewCell else { return UITableViewCell() }
         
         cell.backgroundColor = .orange
-        cell.config(
+        cell.configue(
             name: viewModel.contactList[indexPath.row].name,
             secondName: viewModel.contactList[indexPath.row].secondName
         )
@@ -85,13 +76,6 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
     }
     
     func reloadTable() {
-        tableView.reloadData()
+        contactTableView.reloadData()
     }
 }
-//extension ContactListViewController: AddContactDelegate {
-//    func reloadList() {
-//        DispatchQueue.main.async {
-//            self.tableView.reloadData()
-//        }
-//    }
-//}

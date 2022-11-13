@@ -1,13 +1,6 @@
-//
-//  AddContactViewModel.swift
-//  SplitWise
-//
-//  Created by  Oleg Ponomarev on 26.10.2022.
-//
-
 import Foundation
 
-class AddContactViewModel{
+class AddContactViewModel {
     var contact = Contact()
     var vc = ContactListViewController()
     

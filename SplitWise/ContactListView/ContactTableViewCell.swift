@@ -10,7 +10,7 @@ class ContactTableViewCell: UITableViewCell {
         
     }
 
-    func config(name: String, secondName: String) {
+    func configue(name: String, secondName: String) {
         contactNameLabel.text = name
         contactNameLabel.contentMode = .scaleAspectFill
         secondNameLabel.text = secondName
