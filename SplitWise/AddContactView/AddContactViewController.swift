@@ -3,7 +3,6 @@ import RealmSwift
 
 class AddContactViewController: UIViewController {
     private let viewModel = AddContactViewModel()
-    //    var delegate: AddContactDelegate?
     @IBOutlet private var nameTextField: UITextField!
     @IBOutlet private var secondNameTextField: UITextField!
     @IBOutlet private var saveContactButton: UIButton!
@@ -15,19 +14,22 @@ class AddContactViewController: UIViewController {
         super.viewDidLoad()
         
         configue()
+    }
+    
+    func configue() {
         saveContactButton.addTarget(self, action: #selector(saveContactButtonTap), for: .touchUpInside)
         cancelButton.addTarget(self, action: #selector(cancelButtonTap), for: .touchUpInside)
-    }
-    func configue() {
         secondNameTextField.tag = 1
         nameTextField.delegate = self
         secondNameTextField.delegate = self
         nameTextField.placeholder = "Введите имя"
         secondNameTextField.placeholder = "Введите фамилию"
     }
+    
     @objc func cancelButtonTap() {
-        dismiss(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
     }
+    
     @objc func saveContactButtonTap() {
         if !viewModel.contact.name.isEmpty && !viewModel.contact.secondName.isEmpty{
             viewModel.addContact { [weak self] in

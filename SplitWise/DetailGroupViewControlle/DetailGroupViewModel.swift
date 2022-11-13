@@ -12,5 +12,4 @@ class DetailGroupViewModel{
             self.detailGroup.isAchieved = isAchieved
         })
     }
-    
 }

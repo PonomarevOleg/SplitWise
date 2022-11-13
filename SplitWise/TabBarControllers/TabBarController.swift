@@ -1,10 +1,3 @@
-//
-//  TabBarController.swift
-//  SplitWise
-//
-//  Created by  Oleg Ponomarev on 18.10.2022.
-//
-
 import UIKit
 
 class TabBarController: UITabBarController {

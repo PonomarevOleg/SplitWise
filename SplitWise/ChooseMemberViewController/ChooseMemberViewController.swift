@@ -104,11 +104,9 @@ extension ChooseMemberViewController {
                       actionStyles: [UIAlertAction.Style],
                       actions: [((UIAlertAction) -> Void)]
     ) {
-        
         let alertController = UIAlertController(title: title,
                                                 message: massage,
                                                 preferredStyle: alertStyle)
-        
         for (index, indexTitle) in actionTitles.enumerated() {
             let action = UIAlertAction(title: indexTitle,
                                        style: actionStyles[index],

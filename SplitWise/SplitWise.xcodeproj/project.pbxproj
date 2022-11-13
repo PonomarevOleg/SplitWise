@@ -97,8 +97,8 @@
 		1101EA0D29080BBF00ED5DDF /* AddContactView */ = {
 			isa = PBXGroup;
 			children = (
-				1101EA0E29080C0D00ED5DDF /* AddContactViewController.swift */,
 				1101EA0F29080C0D00ED5DDF /* AddContactViewController.xib */,
+				1101EA0E29080C0D00ED5DDF /* AddContactViewController.swift */,
 				1101EA172909542200ED5DDF /* AddContactViewModel.swift */,
 			);
 			path = AddContactView;
@@ -118,8 +118,8 @@
 			children = (
 				1101EA1D290E91A500ED5DDF /* GroupListViewController.xib */,
 				1101EA1C290E91A500ED5DDF /* GroupListViewController.swift */,
-				1199BADD2913CB3600FA34F4 /* GroupTableViewCell.swift */,
 				1199BADE2913CB3600FA34F4 /* GroupTableViewCell.xib */,
+				1199BADD2913CB3600FA34F4 /* GroupTableViewCell.swift */,
 				1199BADB2913B74400FA34F4 /* GroupListViewModel.swift */,
 			);
 			path = GroupListViewController;
@@ -128,10 +128,10 @@
 		1101EA20290E9CD500ED5DDF /* ChooseMemberViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1101EA21290E9D8000ED5DDF /* ChooseMemberViewController.swift */,
 				1101EA22290E9D8000ED5DDF /* ChooseMemberViewController.xib */,
-				1101EA2E290FD1B400ED5DDF /* MemberTableViewCell.swift */,
+				1101EA21290E9D8000ED5DDF /* ChooseMemberViewController.swift */,
 				1101EA2F290FD1B400ED5DDF /* MemberTableViewCell.xib */,
+				1101EA2E290FD1B400ED5DDF /* MemberTableViewCell.swift */,
 				1101EA2C290FB56100ED5DDF /* ChooseMemberViewModel.swift */,
 			);
 			path = ChooseMemberViewController;
@@ -140,8 +140,8 @@
 		1101EA25290EAC9B00ED5DDF /* NewGroupInfoViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1101EA26290EACFC00ED5DDF /* GroupInfoViewController.swift */,
 				1101EA27290EACFC00ED5DDF /* GroupInfoViewController.xib */,
+				1101EA26290EACFC00ED5DDF /* GroupInfoViewController.swift */,
 				1101EA2A290EE7A700ED5DDF /* GroupInfoViewModel.swift */,
 			);
 			path = NewGroupInfoViewController;

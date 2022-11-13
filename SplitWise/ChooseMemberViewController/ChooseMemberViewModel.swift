@@ -30,7 +30,6 @@ class ChooseMemberViewModel{
         self.name = name
         self.secondName = secondName
     }
-    
 }
 
 

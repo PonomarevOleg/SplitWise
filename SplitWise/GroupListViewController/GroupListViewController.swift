@@ -2,7 +2,6 @@ import UIKit
 
 class GroupListViewController: UIViewController {
     private var viewModel = GroupListViewModel()
-    private var checker = [Bool]()
     @IBOutlet private var groupTable: UITableView!
     @IBOutlet var addGroupButton: UIButton!
     

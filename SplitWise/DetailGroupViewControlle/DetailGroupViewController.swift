@@ -19,21 +19,15 @@ class DetailGroupViewController: UIViewController {
         memberTableView.dataSource = self
         memberTableView.reloadData()
     }
-    
 }
 
 extension DetailGroupViewController: UITableViewDataSource, UITableViewDelegate {
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let viewModel = viewModel else {
             return 0
         }
         return viewModel.detailGroup.memberList.count
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print{""}
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
@@ -46,7 +40,7 @@ extension DetailGroupViewController: UITableViewDataSource, UITableViewDelegate 
             completion(true)
             self.memberTableView.reloadData()
         }
-
+        
         return UISwipeActionsConfiguration(actions: [changeStatus])
     }
     

@@ -18,8 +18,6 @@ class ContactListViewController: UIViewController {
         contactTableView.dataSource = self
     }
     
-    
-    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         
@@ -35,16 +33,8 @@ class ContactListViewController: UIViewController {
 }
 
 extension ContactListViewController: UITableViewDataSource, UITableViewDelegate {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel.contactList.count
-    }
-    
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -64,7 +54,7 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
             let cell = tableView.dequeueReusableCell(
                 withIdentifier: "ContactTableViewCell",
                 for: indexPath
-        ) as? ContactTableViewCell else { return UITableViewCell() }
+            ) as? ContactTableViewCell else { return UITableViewCell() }
         
         cell.backgroundColor = .orange
         cell.configue(
@@ -72,7 +62,7 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
             secondName: viewModel.contactList[indexPath.row].secondName
         )
         
-         return cell
+        return cell
     }
     
     func reloadTable() {
