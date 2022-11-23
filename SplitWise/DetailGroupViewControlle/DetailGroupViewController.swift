@@ -1,5 +1,6 @@
 import UIKit
 import SwiftUI
+import RealmSwift
 
 class DetailGroupViewController: UIViewController {
     var viewModel: DetailGroupViewModel?
@@ -8,6 +9,7 @@ class DetailGroupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupViewModel()
         configue()
     }
     
@@ -19,6 +21,23 @@ class DetailGroupViewController: UIViewController {
         memberTableView.dataSource = self
         memberTableView.reloadData()
     }
+    
+    private func setupViewModel() {
+            viewModel?.setup { [weak self] (change: ObjectChange<Object>) in
+                guard
+                    let self = self,
+                    let tableView = self.memberTableView
+                else { return }
+
+                // swiftlint:disable empty_enum_arguments
+                switch change {
+                case .change(_, _):
+                    tableView.reloadData()
+                default: print("")
+                }
+            }
+        }
+    
 }
 
 extension DetailGroupViewController: UITableViewDataSource, UITableViewDelegate {
@@ -53,7 +72,7 @@ extension DetailGroupViewController: UITableViewDataSource, UITableViewDelegate 
         cell.backgroundColor = viewModel.detailGroup.memberList[indexPath.row].isMarked ? .green : .red
         cell.configue(
             name: viewModel.detailGroup.memberList[indexPath.row].contact?.name ?? "",
-            secondName: viewModel.detailGroup.memberList[indexPath.row].contact?.secondName ?? ""
+            bill: String(viewModel.getPersonalBill())
         )
         
         return cell

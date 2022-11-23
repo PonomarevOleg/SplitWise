@@ -2,13 +2,23 @@ import UIKit
 import RealmSwift
 
 class ContactListViewController: UIViewController {
-    private let viewModel = ContacListViewModel()
+    private var viewModel: ContacListViewModel?
     @IBOutlet private var contactTableView: UITableView!
     @IBOutlet private var addContactButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setup()
+        setupViewModel()
+    }
+    
+    @objc func tapAddButton() {
+        let vc = AddContactViewController()
         print(Realm.Configuration.defaultConfiguration)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    private func setup() {
         addContactButton.addTarget(self, action: #selector(tapAddButton), for: .touchUpInside)
         contactTableView.register(UINib(
             nibName: "ContactTableViewCell", bundle: nil
@@ -18,30 +28,49 @@ class ContactListViewController: UIViewController {
         contactTableView.dataSource = self
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        
-        viewModel.updateContactList()
-        contactTableView.reloadData()
-    }
+    private func setupViewModel() {
+        viewModel = ContacListViewModel { [weak self] (changes: RealmCollectionChange) in
+                guard let tableView = self?.contactTableView else { return }
+
+                switch changes {
+                case .initial:
+                    tableView.reloadData()
+                    
+                case .update(_, let deletions, let insertions, let modifications):
+                    tableView.performBatchUpdates {
+                        tableView.deleteRows(
+                            at: deletions.map { IndexPath(row: $0, section: 0) },
+                            with: .automatic
+                        )
+                        tableView.insertRows(
+                            at: insertions.map { IndexPath(row: $0, section: 0) },
+                            with: .automatic
+                        )
+                        tableView.reloadRows(
+                            at: modifications.map { IndexPath(row: $0, section: 0) },
+                            with: .automatic
+                        )
+                    }
+
+                case .error(let error):
+                    print(error)
+                }
+            }
+        }
     
-    @objc func tapAddButton() {
-        let vc = AddContactViewController()
-        print(Realm.Configuration.defaultConfiguration)
-        navigationController?.pushViewController(vc, animated: true)
-    }
 }
 
 extension ContactListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        guard let viewModel = viewModel else { return 0}
         return viewModel.contactList.count
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        guard let viewModel = viewModel else { return }
         if editingStyle == .delete
         {
             viewModel.deleteContact(index: indexPath.row)
-            self.contactTableView.reloadData()
         }
     }
     
@@ -51,6 +80,7 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard
+            let viewModel = viewModel,
             let cell = tableView.dequeueReusableCell(
                 withIdentifier: "ContactTableViewCell",
                 for: indexPath
@@ -63,9 +93,5 @@ extension ContactListViewController: UITableViewDataSource, UITableViewDelegate 
         )
         
         return cell
-    }
-    
-    func reloadTable() {
-        contactTableView.reloadData()
     }
 }

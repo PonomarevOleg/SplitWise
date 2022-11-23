@@ -3,18 +3,18 @@ import UIKit
 class DetailGroupTableViewCell: UITableViewCell {
     
     @IBOutlet private var memberNameLabel: UILabel!
-    @IBOutlet private var memberSecondNameLabel: UILabel!
+    @IBOutlet private var memberBillLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
     }
     
-    func configue(name: String, secondName: String) {
+    func configue(name: String, bill: String) {
         memberNameLabel.text = name
-        memberNameLabel.text = secondName
+        memberBillLabel.text = bill
         memberNameLabel.translatesAutoresizingMaskIntoConstraints = true
-        memberSecondNameLabel.translatesAutoresizingMaskIntoConstraints = true
+        memberBillLabel.translatesAutoresizingMaskIntoConstraints = true
     }
     
 }
